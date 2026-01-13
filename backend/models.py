@@ -10,3 +10,8 @@ class User(BaseModel):
 class LoginUser(BaseModel):
     email: EmailStr
     password: str
+
+# OTP Verification model
+class VerifyOTP(BaseModel):
+    email: EmailStr
+    otp: str

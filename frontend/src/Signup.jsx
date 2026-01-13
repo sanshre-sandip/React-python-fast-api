@@ -17,8 +17,8 @@ function Signup() {
                 email,
                 password,
             });
-            alert('User created successfully. Please login.');
-            navigate('/login');
+            alert('User created successfully. Please verify your email.');
+            navigate('/verify', { state: { email } });
         } catch (err) {
             setError(err.response?.data?.detail || 'Signup failed');
         }
