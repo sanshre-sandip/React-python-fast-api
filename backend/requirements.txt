@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+mysql-connector-python
+pydantic[email]
+email-validator
+passlib
+bcrypt==3.2.2
